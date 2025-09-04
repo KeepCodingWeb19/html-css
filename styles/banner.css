@@ -1,0 +1,29 @@
+.banner {
+  height: 75vh; /* relative viewport */
+  /*
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  */
+  position: relative;
+  .image {
+    background-image: url(../assets/app/catalog.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .content {
+    text-align: center;
+  }
+  p.bold {
+    font-weight: 700;
+  }
+}
+
+/*
+.banner .content {
+  text-align: center;
+}
+*/
