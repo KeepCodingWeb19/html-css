@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .nav {
+    ul.list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
