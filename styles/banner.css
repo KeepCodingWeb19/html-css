@@ -13,9 +13,12 @@
     bottom: 0;
     right: 0;
     left: 0;
+    opacity: 0.3;
   }
   .content {
     text-align: center;
+    z-index: 1;
+    position: relative;
   }
   p.bold {
     font-weight: 700;
