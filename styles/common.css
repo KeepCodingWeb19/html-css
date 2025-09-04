@@ -1,38 +1,17 @@
-.main-bg {
-  background-color: #000; /* #000000 */
-  color: rgba(255, 255, 255, 1);
-  opacity: 1;
+:root {
+  --bg-color: #000;
+  --main-brand-color: #e50914;
+  --main-brand-color-light: #e44c54;
+  --secondary-brand-color: #0e1b4f;
+  --main-text-color: #FFF;
+  --border-color: #4b5563;
+  --main-font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  font-family: Helvetica, sans-serif;
 }
 
-.footer-test {
-  background-color: blue;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  /* Y-X */
-  padding: 10px 20px;
-  /* T-R-B-L */
-  padding: 10px 30px 40px 10px;
-  /* all */
-  padding: 20px;
-  padding: 1em;
-
-  margin-top: 60px;
-  /* margin-right: 20px; */
-  border: 4px solid red;
-
-  /* em -> 1em = 16px  */
-  /* rem -> 1rem = 16px */
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-.footer {
-  padding: 1em;
-  text-align: center;
-  font-weight: 700;
-  font-style: italic;
+.main-bg {
+  background-color: var(--bg-color); /* #000000 */
+  color: var(--main-text-color);
+  opacity: 1;
+  font-family: var(--main-font-family);
 }
