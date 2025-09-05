@@ -6,6 +6,7 @@
   --main-text-color: #FFF;
   --border-color: #4b5563;
   --main-font-family: Arial, Helvetica, sans-serif;
+  --media-query: 768px;
   font-size: 20px;
 }
 
@@ -24,4 +25,36 @@ a.hidden {
   /* opacity: 0; */
   /* visibility: hidden; */
   display: none;
+}
+
+@media print {
+  header.header, footer.footer, section.banner {
+    display: none;
+  }
+  /*
+  header.header {
+    display: none;
+  }
+  footer.footer {
+    display: none;
+  }
+  section.banner {
+    display: none;
+  }
+  */
+}
+/*
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF;
+    --main-text-color: #000;
+  }
+}
+*/
+
+/*@media screen and (min-width: 768px) {*/
+@media screen and (width > 768px) {
+  a.hidden {
+    display: block;
+  }
 }
