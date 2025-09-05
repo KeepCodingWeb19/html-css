@@ -1,0 +1,28 @@
+.info {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 768px;
+  .assets {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  img {
+    width: 16em;
+    z-index: 2;
+  }
+  video {
+    width: 10em;
+    position: absolute;
+    top: 30px;
+  }
+}
+
+@media screen and (width > 768px) {
+  .info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px
+  }
+}
