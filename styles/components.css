@@ -1,0 +1,8 @@
+.btn {
+  color: var(--main-text-color);
+  background-color: var(--main-brand-color);
+  padding: 0.7em;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+}

@@ -9,9 +9,19 @@
   font-size: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .main-bg {
   background-color: var(--bg-color); /* #000000 */
   color: var(--main-text-color);
   opacity: 1;
   font-family: var(--main-font-family);
+}
+
+a.hidden {
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  display: none;
 }
