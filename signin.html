@@ -18,8 +18,7 @@
 </head>
 <body>
   <h1>Signin</h1>
-  <a href="./">Go home</a>
-  <form method="post">
+  <form method="post" novalidate>
     <div>
       <label for="mail">Pon tu correo</label>
       <input
@@ -29,11 +28,12 @@
         autocomplete="off"
         placeholder="Ex. test@test.com"
         value="test@test.com"
+        required
       >
     </div>
     <div>
       <label for="password">password</label>
-      <input type="password" id="password" name="password">
+      <input type="password" id="password" name="password" required>
     </div>
     <div>
       <label for="phone">Enter you phone number</label>
@@ -42,6 +42,10 @@
         id="phone"
         name="phone"
         autocomplete="off"
+        required
+        placeholder="format 123-123-1234"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        title="Format (123-123-1234)"
       >
     </div>
     <div>
@@ -53,12 +57,51 @@
     <fieldset>
       <legend>Fav genre</legend>
       <label for="shows">shows</label>
-      <input type="radio" name="genre" id="shows" value="shows">
+      <input type="radio" name="genre" id="shows" value="shows" checked>
       <label for="docu">Docus</label>
       <input type="radio" name="genre" id="docu" value="documentary">
     </fieldset>
+    <!--
+    <fieldset>
+      <legend>Fav programing lang</legend>
+      <label for="js">js</label>
+      <input type="checkbox" name="favlang" id="js" value="js" checked>
+      <label for="python">python</label>
+      <input type="checkbox" name="favlang" id="python" value="python">
+      <label for="go">Go</label>
+      <input type="checkbox" name="favlang" id="go" value="go">
+    </fieldset>
+    -->
+    <div>
+      <label for="bio">User bio</label>
+      <textarea name="bio" id="bio" placeholder="Add your bio..." required maxlength="50"></textarea>
+    </div>
 
-    <button>Guardar</button>
+    <div>
+      <label for="remember">Remember me</label>
+      <input type="checkbox" name="remember" id="remember" required>
+    </div>
+    <!--
+      <input type="number" name="" id="">
+      <input type="color" name="" id="">
+      <input type="date" name="" id="">
+      <input type="month" name="" id="">
+      <input type="range" name="" id="">
+      <input type="time" name="" id="">
+    -->
+    <div>
+      <label for="country">Country</label>
+      <select name="country" id="country" autocomplete="off">
+        <option value="ES">Spain</option>
+        <option value="CO">Colombia</option>
+        <option value="US">Usa</option>
+      </select>
+    </div>
+
+    <div>
+      <button type="reset">Reset</button>
+      <button type="submit">Guardar</button>
+    </div>
     <!-- <input type="submit" value="Guardar"> -->
   </form>
 </body>
