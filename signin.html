@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeflix signin</title>
+  <style>
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Signin</h1>
+  <a href="./">Go home</a>
+  <form method="post">
+    <div>
+      <label for="mail">Pon tu correo</label>
+      <input
+        type="email"
+        id="mail"
+        name="mail"
+        autocomplete="off"
+        placeholder="Ex. test@test.com"
+        value="test@test.com"
+      >
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input type="password" id="password" name="password">
+    </div>
+    <div>
+      <label for="phone">Enter you phone number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        autocomplete="off"
+      >
+    </div>
+    <div>
+      <label for="file">Profile picture</label>
+      <input type="file" name="profile" id="file" multiple accept="image/png">
+    </div>
+    <!-- <button type="button">Click no submit</button> -->
+
+    <fieldset>
+      <legend>Fav genre</legend>
+      <label for="shows">shows</label>
+      <input type="radio" name="genre" id="shows" value="shows">
+      <label for="docu">Docus</label>
+      <input type="radio" name="genre" id="docu" value="documentary">
+    </fieldset>
+
+    <button>Guardar</button>
+    <!-- <input type="submit" value="Guardar"> -->
+  </form>
+</body>
+</html>
