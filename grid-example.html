@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  <style>
+    body {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 200px repeat(2, 1fr); /* 200px 1fr 1fr */
+      grid-template-rows: 60px 40vh 50vh 100px;
+      grid-template-areas: 
+        "keepcoding  keepcoding  keepcoding"
+        "aside       section     ."
+        "aside       main        main"
+        "footer      footer      footer";
+    }
+    header {
+      background-color: orange;
+      /*grid-column-start: 1;
+      grid-column-end: -1;
+      grid-row-start: 1;
+      grid-row-end: 2;*/
+      grid-area: keepcoding;
+    }
+    section {
+      background-color: aqua;
+      /*
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      */
+      grid-area: section;
+    }
+    aside {
+      background-color: blueviolet;
+      /* grid-column: 1 / 2;*/
+      grid-area: aside;
+    }
+    main {
+      background-color: yellow;
+      /*
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      */
+      grid-area: main;
+    }
+    footer {
+      background-color: green;
+      /*
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      */
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <section>section</section>
+  <aside>aside</aside>
+  <main>main</main>
+  <footer>footer</footer>
+</body>
+</html>
