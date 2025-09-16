@@ -5,7 +5,35 @@
   display: inline-block;
   border-radius: 5px;
   text-decoration: none;
+  border: 1px solid var(--main-brand-color);
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+  }
 }
+
+form {
+  .form_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+      margin-bottom: 0.5rem;
+    }
+    input, select, textarea {
+      padding: 1rem;
+      border-radius: 5px;
+      border: none;
+      background-color: var(--input-bg-color);
+      color: var(--main-text-color);
+    }
+  }
+
+  input[type="file"], fieldset {
+    margin-bottom: 0.7rem;
+  }
+}
+
 /*
 .btn:hover {
   background-color: var(--main-brand-color-light);
@@ -14,5 +42,8 @@
 @media screen and (hover: hover) {
   .btn:hover {
     background-color: var(--main-brand-color-light);
+  }
+  .btn.secondary:hover {
+    background-color: var(--border-color);
   }
 }
