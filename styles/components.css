@@ -6,6 +6,16 @@
   border-radius: 5px;
   text-decoration: none;
   border: 1px solid var(--main-brand-color);
+  width: 100px;
+  transition-property: width;
+  /*
+  transition-duration: 10s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+  transition: width 10s linear 2s, background-color 2s ease-in;
+  transition: all 1s linear;
+  */
+  transition: background-color 0.3s linear;
   &.secondary {
     background-color: transparent;
     border: 1px solid var(--main-text-color);
@@ -40,8 +50,12 @@ form {
 }
 */
 @media screen and (hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
   .btn:hover {
     background-color: var(--main-brand-color-light);
+    /* width: 500px; */
   }
   .btn.secondary:hover {
     background-color: var(--border-color);

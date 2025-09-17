@@ -15,13 +15,6 @@
   box-sizing: border-box;
 }
 
-h4 {
-  transition: color 1s linear;
-}
-
-h4:hover {
-  color: red;
-}
 
 /* Hiding class, making content visible only to screen readers but not visually */
 /* "sr" meaning "screen-reader" */
